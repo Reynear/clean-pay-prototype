@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - CleanPay</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white flex items-center justify-center p-5 font-sans">
+  <div class="w-full max-w-[480px]">
+    <div class="bg-white border border-gray-200 rounded-xl p-12 md:p-8 sm:p-6 w-full">
+      <div class="flex items-center gap-3 mb-10">
+        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+        </div>
+        <span class="text-2xl font-bold text-gray-900 tracking-tight">CleanPay</span>
+      </div>
+      <div class="mb-8">
+        <h1 class="text-3xl md:text-[28px] font-bold text-gray-900 mb-2 tracking-tight">Create your account</h1>
+        <p class="text-base md:text-sm text-gray-500 leading-relaxed">Sign up to start managing your laundry appointments</p>
+      </div>
+      <form id="signupForm" class="mb-6">
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Student Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="youremail@mymona.uwi.edu" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all"
+          >
+        </div>
+        <div class="mb-6">
+          <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+          <input 
+            type="text" 
+            id="firstName" 
+            name="firstName" 
+            placeholder="Enter your first name" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all"
+          >
+        </div>
+        <div class="mb-6">
+          <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+          <input 
+            type="text" 
+            id="lastName" 
+            name="lastName" 
+            placeholder="Enter your last name" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base text-gray-900 bg-white placeholder:text-gray-400 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all"
+          >
+        </div>
+        <div class="mb-6">
+          <label for="hallOfResidence" class="block text-sm font-medium text-gray-700 mb-2">Hall of Residence</label>
+          <select 
+            id="hallOfResidence" 
+            name="hallOfResidence" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all"
+          >
+            <option value="">Select your hall of residence</option>
+            <option value="chancellor">Chancellor Hall</option>
+            <option value="irvine">Irvine Hall</option>
+            <option value="rex-nettleford">Rex Nettleford Hall</option>
+            <option value="mary-seacole">Mary Seacole Hall</option>
+            <option value="taylor">Taylor Hall</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="mb-6">
+          <label for="notificationMethod" class="block text-sm font-medium text-gray-700 mb-2">Preferred Notification Method</label>
+          <select 
+            id="notificationMethod" 
+            name="notificationMethod" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base text-gray-900 bg-white focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all"
+          >
+            <option value="">Select notification method</option>
+            <option value="push">Push Notification</option>
+            <option value="email">Email</option>
+            <option value="sms">SMS</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 bg-blue-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-colors hover:bg-blue-700 active:bg-blue-800 mt-2">Sign up</button>
+      </form>
+      <div class="text-center text-sm text-gray-500">
+        Already have an account? <a href="/" class="text-blue-600 no-underline font-medium hover:underline">Sign in</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

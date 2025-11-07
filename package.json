@@ -1,15 +1,13 @@
 {
-  "name": "clean-pay-prototype",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
+  "name": "hono",
+  "type": "module",
   "dependencies": {
-    "elysia": "latest"
+    "hono": "^4.10.4"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+    "@biomejs/biome": "2.3.4",
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
 }
